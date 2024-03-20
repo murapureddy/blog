@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    puts "edit command"
+    @post = Post.find_by(id: params[:id])
   end
 
   # POST /posts
