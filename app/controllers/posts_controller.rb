@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    puts "Show pages"
   end
 
   # GET /posts/new
