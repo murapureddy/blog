@@ -67,6 +67,10 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
     end
 
+    def new_varibe
+      puts "listing commands"
+    end
+
     # Only allow a list of trusted parameters through.
     def post_params
       params.require(:post).permit(:title, :body,:desc,some_data: {})
