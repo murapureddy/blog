@@ -15,10 +15,12 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    puts "new method"
   end
 
   # GET /posts/1/edit
   def edit
+    @post = Post.find_by(id: params[:id])
   end
 
   # POST /posts
